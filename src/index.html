@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>自建angular</title>
+</head>
+<body ngl-controller="MainController">
+	<input type="text" ngl-model="data.name">
+	<p ngl-bind="data.name"></p>
+	<p ngl-clock></p>
+	<button ngl-click="add()">加一个</button>
+	<ul>
+		<li ngl-bind="ele.name" ngl-repeat="ele in arr" ></li>
+	</ul>
+	<script src="built.js"></script>
+</body>
+</html>
